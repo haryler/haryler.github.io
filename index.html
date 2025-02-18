@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <label for="searchInput">Search for a pokemon :</label>
+    <input type="text" id="searchInput" placeholder="(name or id)">
+    <button id="searchButton">Search</button>
+
+    <div id="container"></div>
+
+    <div id="containerWithDetails">
+
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+<script src="./pokedex.js"> </script>
+</html>
