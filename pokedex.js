@@ -4,11 +4,14 @@ const searchInput = document.getElementById("searchInput")
 const searchButton = document.getElementById("searchButton")
 const container = document.getElementById("container")
 const containerWithDetails = document.getElementById("containerWithDetails")
+const drawButton = document.getElementById("drawButton")
+
 let currentPokemonData = null
 
 fetchRandomRecommendations()
 
 searchButton.addEventListener("click" , searchPokemon)
+drawButton.addEventListener("click", () => fetchRandomRecommendations() )
 
 // Load SearchHistory in localStorage, or empty array if localStorage is empty
 let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || []
@@ -151,7 +154,7 @@ function renderHistory() {
 async function fetchRandomRecommendations() {
     const recommendationsContainer = document.getElementById("recommendations");
 
-    recommendationsContainer.innerHTML = "<h3>Random Pokemons</h3>";
+    recommendationsContainer.innerHTML = "<button id=\"drawButton\">Draw random pokemons</button><h3>Random Pokemons</h3>";
 
     // 5 random numbers (no double)
     const randomIds = [];
@@ -193,3 +196,4 @@ async function fetchRandomRecommendations() {
         console.error("Erreur lors de la récupération des Pokémon recommandés", error);
     }
 }
+
