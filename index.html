@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>POKEDEX</h1>
     <label for="searchInput">Search for a pokemon :</label>
     <input type="text" id="searchInput" placeholder="(name or id)">
     <button id="searchButton">Search</button>
 
-    <div id="container"></div>
+    <div id="container">
 
-    <div id="containerWithDetails">
+        <div id="containerWithDetails">
 
-    <div id="modal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
-            <div id="modalDetails"></div>
+            <div id="modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div id="modalDetails"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <div id="recommendations">
+        <button id="drawButton">Draw random pokemons</button>
+        <h3>Random pokemon</h3>
+    </div>
+
+    <div id="historyContainer">
+        <h3>History</h3>
+        <ul id="historyList"></ul>
     </div>
 
 
