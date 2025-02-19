@@ -51,6 +51,8 @@ Cette application vous permet de rechercher un Pokémon par nom ou identifiant, 
    - Cliquez sur l’un de ces éléments pour relancer la recherche correspondante.
 
 
+---
+
 # Documentation Technique
 
 Ce document décrit l’architecture et le fonctionnement technique du projet **Pokedex**, développé en JavaScript et utilisant l’API [PokeAPI](https://pokeapi.co/).
