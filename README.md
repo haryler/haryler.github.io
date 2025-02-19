@@ -131,3 +131,4 @@ Ce document décrit l’architecture et le fonctionnement technique du projet **
 
 La structure HTML et le fichier CSS ont partiellement été générés avec chatGPT-o3-mini-high, puis sélectionnés et affinés par la suite.
 
+L'application a d'abord été developée avec du contenu en Anglais (car plus simple avec l'API), mais j'ai commencé à trouver le moyen d'avoir du contenu en Français (implémenté pour la description des pokémons). **Malheureusement**, la description en Français n'est pas disponible pour tous les pokemons, et je n'ai pas encore intégrer la gestion de cette erreur.
